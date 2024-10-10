@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 Carina Liu
 9/23/24
 ITWS1100- Lab 3
@@ -13,4 +11,3 @@ In my Project/Labs tab, I included a text box with links to everything I did in 
 this is the easiest way to access information. I also made sure to add very clear names to all the links so that the user knows
 exactly what they are looking for on my website. Overall, my goal when designing this website is to make it look clean and minimalistic,
 as well as being easy to navigate for users. 
->>>>>>> Stashed changes
