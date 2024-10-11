@@ -19,12 +19,14 @@ body {
    padding: 10px;
    text-align: center;
    background: #f8cd84;
+
    color: white;
 }
 
 /* Increase the font size of the heading */
 .header h1 {
    font-size: 45px;
+
 }
 
 /* Style the top navigation bar */
@@ -38,6 +40,7 @@ body {
    float: left;
    display: block;
    color: rgb(11, 11, 11);
+
    text-align: center;
    padding: 14px 20px;
    text-decoration: none;
@@ -173,7 +176,6 @@ body {
    padding: 20px;
    margin-bottom: 80px;
    flex: 1; /*makes the content push the footer down*/
-
 }
 
 .flex-item {

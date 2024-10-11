@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>RSS Title</title>
+	<description>This is an example of an RSS feed</description>
+	<link>http://www.example.com/</link>
+	<lastBuildDate>Tue, 12 Oct 2010 00:01:00 +0000 </lastBuildDate>
+	<pubDate>Tue, 12 Oct 2010 00:01:00 +0000 </pubDate>
+ 
+	<item>
+		<title>Everything you missed about the iphone 16, AirPods 4 and the Apple Watch 10</title>
+        <link>https://www.cnn.com/2024/09/09/tech/new-iphone-16-apple-release/index.html</link>
+		<description> Apple's latest releases include the iPhone 16 with AI features, the AirPods 4 with improved comfort and
+        noise cancellation, and the Apple Watch 10 with a larger display and sleep apnea detection.</description>
+	  <pubDate>Mon, 9 Sept 2024 19:24:04 +0000 </pubDate>
+	</item>
+
+    <item>
+		<title>The Electric Vehicle Future is Coming. Just a Little More Slowly</title>
+        <link>https://www.nytimes.com/2024/09/05/climate/electric-vehicle-sales-projections.html</link>
+		<description> Automakers are slowing down the introduction of new electric vehicle models and adjusting 
+        decarbonization goals, but experts say the industry is still on track for an electric future, driven by ongoing investments 
+        and the gradual approach to price parity with gas-powered cars.</description>
+	  <pubDate>Thurs, 5 Sept 2024 19:39:01 +0000 </pubDate>
+	</item>
+
+    <item>
+		<title>OpenAI Is Growing Fast and Burning Through Piles of Money</title>
+        <link>https://www.nytimes.com/2024/09/27/technology/openai-chatgpt-investors-funding.html</link>
+		<description> OpenAI is rapidly growing due to the success of ChatGPT, but is burning through billions in expenses, 
+        prompting the company to seek $7 billion in additional funding as it transitions to a for-profit model amidst leadership 
+        departures and rising operational costs.</description>
+	  <pubDate>Fri, 27 Sept 2024 20:53:49 +0000 </pubDate>
+	</item>
+    
+    <item>
+		<title>Meta’s A.I. Assistant Is Fun to Use, but It Can’t Be Trusted</title>
+        <link>https://www.nytimes.com/2024/04/24/technology/personaltech/meta-ai-facebook-instagram-chatbot.html</link>
+		<description> Meta’s new AI assistant, integrated into apps like Instagram and Messenger, is fun for generating images
+         and editing text but struggles with factual accuracy, making it unreliable for tasks like web searches or counting. Despite 
+         Mark Zuckerberg’s hope for the chatbot to be the smartest, it struggles with facts, numbers and web search.</description>
+	  <pubDate>Wed, 24 April 2024 09:05:38 +0000 </pubDate>
+	</item>
+
+    <item>
+		<title>When robots can't riddle: What puzzles reveal about the depths of our own minds</title>
+        <link>https://www.bbc.com/future/article/20240912-what-riddles-teach-us-about-the-human-mind</link>
+		<description>AI struggles with solving riddles and logic puzzles that require abstract reasoning, revealing its limitations
+         compared to human thinking, but studying these differences may help improve both AI systems and our understanding 
+         of the human mind.</description>
+	  <pubDate>Sun, 22 Sept 2024 10:14:28 +0000 </pubDate>
+	</item>
+</channel>
+</rss>
+
