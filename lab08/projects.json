@@ -1,0 +1,175 @@
+{
+    "projectMenu": [
+       {
+          "labNumber": "Lab 1 - Setup",
+          "projects": [
+             {
+                "labTitle": "AZURE SETUP",
+                "resourceLink": "../lab01/liuc17-lab1-AzureStatus.jpg"
+             },
+             {
+                "labTitle": "GITHUB",
+                "resourceLink": "../lab01/liuc17-lab1-GitHubInfo.jpg"
+             },
+             {
+                "labTitle": "HELLO WORLD",
+                "resourceLink": "../lab01/liuc17-lab1-HelloWorld.pdf"
+             },
+             {
+                "labTitle": "PHP",
+                "resourceLink": "../lab01/liuc17-lab1-PHPMyAdmin.pdf"
+             }
+          ]
+       },
+       {
+          "labNumber": "Lab 2 - Resume",
+          "projects": [
+             {
+                "labTitle": "RESUME",
+                "resourceLink": "../lab02/liuc17 - Lab 2 - HTML - Resume.pdf"
+             },
+             {
+                "labTitle": "README",
+                "resourceLink": "../lab02/README.md"
+             }
+          ]
+       },
+       {
+          "labNumber": "Lab 3 - Personal Website",
+          "projects": [
+             {
+                "labTitle": "HOME PAGE",
+                "resourceLink": "../lab03/index.html"
+             },
+             {
+                "labTitle": "PROJECT PAGE",
+                "resourceLink": "../lab03/projects.html"
+             },
+             {
+                "labTitle": "README",
+                "resourceLink": "../lab03/README.md"
+             },
+             {
+                "labTitle": "CSS",
+                "resourceLink": "../lab03/resource/lab3.css"
+             }
+          ]
+       },
+       {
+          "labNumber": "Lab 4 - RSS & Atom Feed",
+          "projects": [
+             {
+                "labTitle": "RSS",
+                "resourceLink": "../lab04/RSS 2.0.xml"
+             },
+             {
+                "labTitle": "ATOM FEED",
+                "resourceLink": "../lab04/Atom 1.0.xml"
+             },
+             {
+                "labTitle": "README",
+                "resourceLink": "../lab04/README.md"
+             }
+          ]
+       },
+       {
+          "labNumber": "Lab 5 - Javascript",
+          "projects": [
+             {
+                "labTitle": "HTML",
+                "resourceLink": "../lab05/lab5.html"
+             },
+             {
+                "labTitle": "CSS",
+                "resourceLink": "../lab05/lab05.css"
+             },
+             {
+                "labTitle": "JS",
+                "resourceLink": "../lab05/lab05.js"
+             },
+             {
+                "labTitle": "README",
+                "resourceLink": "../lab05/README.md"
+             }
+          ]
+       },
+       {
+          "labNumber": "Lab 6 - Javascript & jQuery",
+          "projects": [
+             {
+                "labTitle": "Website Link",
+                "resourceLink": "http://127.0.0.1:3002/lab06/lab6.html"
+             },
+             {
+                "labTitle": "jQuery",
+                "resourceLink": "../lab06/resources/jquery-3.6.1.min.js"
+             },
+             {
+                "labTitle": "JS",
+                "resourceLink": "../lab06/lab6.js"
+             },
+             {
+                "labTitle": "HTML",
+                "resourceLink": "../lab06/lab6.html"
+             },
+             {
+                "labTitle": "CSS",
+                "resourceLink": "../lab06/lab6.css"
+             },
+             {
+                "labTitle": "README",
+                "resourceLink": "../lab06/READMELAB6"
+             },
+             {
+                "labTitle": "Instructions",
+                "resourceLink": "../lab06/readme.md"
+             }
+          ]
+       },
+       {
+         "labNumber": "Lab 7 - Project Mockups",
+         "projects": [
+            {
+               "labTitle": "HTML",
+               "resourceLink": "../lab05/lab5.html"
+            },
+            {
+               "labTitle": "CSS",
+               "resourceLink": "../lab05/lab05.css"
+            },
+            {
+               "labTitle": "JS",
+               "resourceLink": "../lab05/lab05.js"
+            },
+            {
+               "labTitle": "README",
+               "resourceLink": "../lab05/README.md"
+            }
+         ]
+
+       },
+       {
+         "labNumber": "Lab 8 - Dynamic Website",
+         "projects": [
+            {
+               "labTitle": "projects.json",
+               "resourceLink": "../lab08/projects.json"
+            },
+            {
+               "labTitle": "projects.js",
+               "resourceLink": "../lab08/projects.js"
+            },
+            {
+               "labTitle": "projects.html",
+               "resourceLink": "../lab03/projects.html"
+            },
+            {
+               "labTitle": "README",
+               "resourceLink": "../lab08/README.md"
+            }
+         ]
+
+       }
+    ]
+ }
+ 
