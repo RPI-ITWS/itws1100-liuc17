@@ -172,19 +172,61 @@ body {
    display: flex; /* Enables flexbox layout */
    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
    justify-content: space-between; /* Ensures space between items */
-   gap: 20px; /* Adds space between items */
-   padding: 20px;
+   gap: 40px; /* Adds space between items */
+   padding: 50px;
    margin-bottom: 80px;
    flex: 1; /*makes the content push the footer down*/
 }
 
 .flex-item {
-   background-color: lightgray;
-   border: 2px solid blue;
+   background-color: #f4e6d1;
+   border: 2px solid rgb(255, 153, 0);
    padding: 20px;
-   width: 45%; /* Adjusts the width of each box */
+   width: 30%; /* Adjusts the width of each box */
    text-align: center;
+   transition: background-color 0.3s;
+   border-radius: 15px; /*rounded corners*/
 }
 
+.flex-item a {
+   color: rgb(0, 0, 0);
+   background-color: #ffffff;
+   text-decoration: none;
+   padding: 8px 12px; /* Add padding to make the link look like a button */
+   border-radius: 5px; /* Rounded corners */
+   display: inline-block;
+   margin: 5px 0;
+   transition: background-color 0.3s;
+}
+
+.flex-item a:hover {
+   background-color: #005f99; /* Darker color on hover */
+}
+
+project-header{
+   background-color: #f0f8ff;
+   border: 2px solid #007acc;
+   border-radius: 5px;
+   margin-bottom: 5px;
+   font-weight: bold;
+   transition: background-color 0.3s;
+}
+
+project-header:hover{
+   background-color: #e0f7fa;
+}
+
+.project-details a {
+   color: #007acc;
+   text-decoration: none;
+   display: block;
+   padding: 5px;
+   margin-left: 15px;
+}
+
+.project-details a:hover {
+   background-color: #e0f7fa;
+   border-radius: 3px;
+}
 
 
