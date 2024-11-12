@@ -20,13 +20,15 @@
   </tr>
 
 <?php
+  echo '<div class="messages">Attempting to connect to the database...</div>'; // Debug message
+
   @$db = new mysqli('localhost', 'root', 'root', 'iitF23');
 
   if ($db->connect_error) {
     echo '<div class="messages">Could not connect to the database. Error: ';
     echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
   } else {
-    echo '<div class="messages">Database connection successful.</div>'; // Debugging output
+    echo '<div class="messages">Database connection successful.</div>'; // Debug message
 
     $query = "SELECT movies.title, actors.first_name, actors.last_name 
               FROM movies 
@@ -34,11 +36,16 @@
               JOIN actors ON actors.actorid = movie_actor.actor_id 
               ORDER BY movies.title";
 
+    echo '<div class="messages">Attempting to execute query...</div>'; // Debug message
+
     $result = $db->query($query);
 
     if ($result) {
+      echo '<div class="messages">Query executed successfully.</div>'; // Debug message
+
       // Check if there are results
       if ($result->num_rows > 0) {
+        echo '<div class="messages">Results found: ' . $result->num_rows . '</div>'; // Debug message
         while ($row = $result->fetch_assoc()) {
           echo "<tr><td>" . htmlspecialchars($row['title']) . "</td>";
           echo "<td>" . htmlspecialchars($row['first_name']) . " " . htmlspecialchars($row['last_name']) . "</td></tr>";
@@ -54,6 +61,7 @@
     }
 
     $db->close();
+    echo '<div class="messages">Database connection closed.</div>'; // Debug message
   }
 ?>
 
