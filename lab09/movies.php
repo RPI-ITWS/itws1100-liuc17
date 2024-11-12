@@ -34,12 +34,23 @@
 
     $result = $db->query($query);
 
-    while ($row = $result->fetch_assoc()) {
-      echo "<tr><td>" . htmlspecialchars($row['title']) . "</td>";
-      echo "<td>" . htmlspecialchars($row['first_name']) . " " . htmlspecialchars($row['last_name']) . "</td></tr>";
+    if ($result) {
+      // Check if there are results
+      if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+          echo "<tr><td>" . htmlspecialchars($row['title']) . "</td>";
+          echo "<td>" . htmlspecialchars($row['first_name']) . " " . htmlspecialchars($row['last_name']) . "</td></tr>";
+        }
+      } else {
+        // No results found
+        echo "<tr><td colspan='2'>No movies and actors found.</td></tr>";
+      }
+      $result->free();
+    } else {
+      // Query error
+      echo "<tr><td colspan='2'>Error in query execution: " . $db->error . "</td></tr>";
     }
 
-    $result->free();
     $db->close();
   }
 ?>
