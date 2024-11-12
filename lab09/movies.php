@@ -26,6 +26,8 @@
     echo '<div class="messages">Could not connect to the database. Error: ';
     echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
   } else {
+    echo '<div class="messages">Database connection successful.</div>'; // Debugging output
+
     $query = "SELECT movies.title, actors.first_name, actors.last_name 
               FROM movies 
               JOIN movie_actor ON movies.movieid = movie_actor.movie_id 
