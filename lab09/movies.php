@@ -22,7 +22,7 @@
 <?php
   echo '<div class="messages">Attempting to connect to the database...</div>'; // Debug message
 
-  @$db = new mysqli('localhost', 'root', 'root', 'iitF23');
+  @$db = new mysqli('127.0.0.1', 'root', 'root', 'iitF23');
 
   if ($db->connect_error) {
     echo '<div class="messages">Could not connect to the database. Error: ';
