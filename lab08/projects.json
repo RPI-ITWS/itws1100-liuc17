@@ -169,7 +169,53 @@
             }
          ]
 
+       },
+       {
+         "labNumber": "Lab 9 - PHP",
+         "projects": [
+            {
+               "labTitle": "iit.sql",
+               "resourceLink": "../lab09/iit.sql"
+            },
+            {
+               "labTitle": "iitstart.php",
+               "resourceLink": "../lab09/index-iitstart.php"
+            },
+            {
+               "labTitle": "index.php",
+               "resourceLink": "../lab09/index.php"
+            },
+            {
+               "labTitle": "movies.php",
+               "resourceLink": "../lab09/movies.php"
+            },
+            {
+               "labTitle": "actor-delete.php",
+               "resourceLink": "../lab09/actor-delete.php"
+            },
+            {
+               "labTitle": "README",
+               "resourceLink": "../lab08/README.md"
+            }
+         ]
+
+       },
+       {
+         "labNumber": "Lab 10 - Move Servers to Production",
+         "projects": [
+            {
+               "labTitle": "projects.json",
+               "resourceLink": "../lab10/index.php"
+            },
+            {
+               "labTitle": "README",
+               "resourceLink": "../lab10/README.md"
+            }
+         ]
+
        }
+
+
     ]
  }
  
