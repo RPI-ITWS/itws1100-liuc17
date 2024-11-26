@@ -10,4 +10,5 @@ Azure Link: liucrpi.eastus.cloudapp.azure.com
 
 
 For my final lab, we are going to deploy our websites to production so that they may be reached forom our FQDN, while still maintaining
-some security. I created a index.php that will redirect my browser to open my personal website's home page.
+some security. I created a index.php that will redirect my browser to open my personal website's home page. After I have moved
+all of my files to the right place, and fixed up my repository, I am ready to publish my website.
