@@ -5,7 +5,7 @@ include('includes/header.php');
 
 <div class="row">
     <div class="picture-layout">
-        <img id="circle-img" src="lab03/profile img.jpg" alt="Profile Photo">
+        <img id="circle-img" src="../lab03/profile img.jpg" alt="Profile Photo">
     </div>
 
     <div class="main">
