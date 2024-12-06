@@ -1,6 +1,52 @@
 <?php
-// Include header
+// Start a session to manage login state
+session_start();
+
+// Include database connection and header
+include('includes/conn.php');
 include('includes/header.php');
+
+// Check if user is logged in
+if (isset($_SESSION['username'])) {
+    echo "<div class='welcome-message'>";
+    echo "<h3>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h3>";
+    echo "<a href='logout.php' class='btn btn-logout'>Logout</a>";
+    echo "</div>";
+} else {
+    // Display login form if user is not logged in
+    echo "<div class='login-form'>";
+    echo "<h3>Login</h3>";
+    echo "<form method='POST' action=''>";
+    echo "<label for='username'>Username:</label>";
+    echo "<input type='text' name='username' id='username' required>";
+    echo "<label for='password'>Password:</label>";
+    echo "<input type='password' name='password' id='password' required>";
+    echo "<button type='submit' name='login'>Login</button>";
+    echo "</form>";
+    echo "</div>";
+}
+
+// Handle login form submission
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
+
+    // Query to validate user credentials
+    $query = "SELECT * FROM mySiteUsers WHERE username = '$username' AND password = '$password'";
+    $result = mysqli_query($conn, $query);
+
+    if ($result && mysqli_num_rows($result) > 0) {
+        $user = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['user_type'] = $user['user_type']; // Store user type (e.g., 'user' or 'admin')
+
+        // Redirect to refresh the page with the welcome message
+        header("Location: index.php");
+        exit;
+    } else {
+        echo "<div class='error-message'>Invalid username or password.</div>";
+    }
+}
 ?>
 
 <div class="row">
