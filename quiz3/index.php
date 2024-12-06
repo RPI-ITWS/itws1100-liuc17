@@ -1,15 +1,21 @@
-<?php
+<?php 
 // Start a session to manage login state
 session_start();
 
 // Include database connection and header
-include('includes/conn.php');
-include('includes/header.php');
+include('../includes/conn.php');
+include('../includes/header.php');
 
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
     echo "<div class='welcome-message'>";
     echo "<h3>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h3>";
+
+    // Check if the logged-in user is an admin
+    if (isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'admin') {
+        echo "<a href='admin.php' class='btn btn-admin'>Admin Panel</a>";
+    }
+
     echo "<a href='logout.php' class='btn btn-logout'>Logout</a>";
     echo "</div>";
 } else {
