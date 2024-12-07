@@ -3,8 +3,8 @@
 session_start();
 
 // Include database connection and header
-include('includes/conn.php');
-include('includes/header.php');
+include('conn.php');
+include('header.php');
 
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
@@ -75,5 +75,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
 <?php
 // Include footer
-include('includes/footer.php');
+include('footer.php');
 ?>
