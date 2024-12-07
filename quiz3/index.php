@@ -3,8 +3,8 @@
 session_start();
 
 // Include database connection and header
-include('../includes/conn.php');
-include('../includes/header.php');
+include('includes/conn.php');
+include('includes/header.php');
 
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
