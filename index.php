@@ -3,8 +3,8 @@
 session_start();
 
 // Include database connection and header
-include('quiz3/conn.php');
-include('quiz3/header.php');
+include('quiz3/includes/conn.php');
+include('quiz3/includes/header.php');
 
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
 <div class="row">
     <div class="picture-layout">
-        <img id="circle-img" src="../lab03/profile img.jpg" alt="Profile Photo">
+        <img id="circle-img" src="resources/profile img.jpg" alt="Profile Photo">
     </div>
 
     <div class="main">
