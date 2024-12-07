@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITWS1100 - Carina Liu</title>
-    <link rel="stylesheet" href="quiz3/includes/quiz3.css">
+    <link rel="stylesheet" href="/iit/resources/quiz3.css">
 </head>
 <body>
     <div class="wrapper">
@@ -13,6 +13,6 @@
             <p>Carina Liu's Profile</p>
         </div>
         <div class="navbar">
-            <a href="/iit/index.php">Home</a>
-            <a href="/iit/quiz3/projects.php">Projects/Labs</a>
+            <a href="../index.php">Home</a>
+            <a href="projects.php">Projects/Labs</a>
         </div>
