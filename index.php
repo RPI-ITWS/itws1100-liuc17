@@ -1,63 +1,34 @@
-<?php 
-// Start a session to manage login state
+<?php
+// Start session to manage login state
 session_start();
 
-// Include database connection and header
-include('quiz3/includes/conn.php');
-include('quiz3/includes/header.php');
+// Include database connection, header, and footer
+include 'quiz3/includes/conn.php';
+include 'quiz3/includes/header.php';
 
 // Check if user is logged in
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['user_name'])) {
     echo "<div class='welcome-message'>";
-    echo "<h3>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h3>";
-
-    // Check if the logged-in user is an admin
-    if (isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'admin') {
-        echo "<a href='admin.php' class='btn btn-admin'>Admin Panel</a>";
+    echo "<h3>Welcome, " . htmlspecialchars($_SESSION['user_name']) . "!</h3>";
+    
+    // Display admin-specific options if user is an admin
+    if ($_SESSION['user_type'] === 'admin') {
+        echo "<p>You have admin privileges.</p>";
+        echo "<a href='admin.php' class='btn btn-admin'>Manage Labs/Projects</a>";
     }
 
     echo "<a href='logout.php' class='btn btn-logout'>Logout</a>";
     echo "</div>";
 } else {
-    // Display login form if user is not logged in
-    echo "<div class='login-form'>";
-    echo "<h3>Login</h3>";
-    echo "<form method='POST' action=''>";
-    echo "<label for='username'>Username:</label>";
-    echo "<input type='text' name='username' id='username' required>";
-    echo "<label for='password'>Password:</label>";
-    echo "<input type='password' name='password' id='password' required>";
-    echo "<button type='submit' name='login'>Login</button>";
-    echo "</form>";
-    echo "</div>";
-}
-
-// Handle login form submission
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
-
-    // Query to validate user credentials
-    $query = "SELECT * FROM mySiteUsers WHERE username = '$username' AND password = '$password'";
-    $result = mysqli_query($conn, $query);
-
-    if ($result && mysqli_num_rows($result) > 0) {
-        $user = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $user['username'];
-        $_SESSION['user_type'] = $user['user_type']; // Store user type (e.g., 'user' or 'admin')
-
-        // Redirect to refresh the page with the welcome message
-        header("Location: index.php");
-        exit;
-    } else {
-        echo "<div class='error-message'>Invalid username or password.</div>";
-    }
+    // If not logged in, redirect to the login page
+    header("Location: login.php");
+    exit();
 }
 ?>
 
 <div class="row">
     <div class="picture-layout">
-        <img id="circle-img" src="resources/profile_img.jpg" alt="Profile Photo">
+        <img id="circle-img" src="../lab03/profile img.jpg" alt="Profile Photo">
     </div>
 
     <div class="main">
@@ -75,5 +46,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
 <?php
 // Include footer
-include('quiz3/footer.php');
+include 'quiz3/includes/footer.php';
 ?>
