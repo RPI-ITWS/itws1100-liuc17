@@ -1,7 +1,7 @@
 <div class="footer">
             <h3>Carina Liu - ITWS1100</h3>
             <?php
-            include('../includes/conn.php');
+            include('quiz3/includes/conn.php');
             $sql = "SELECT content FROM myFooter";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
