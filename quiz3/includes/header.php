@@ -13,6 +13,6 @@
             <p>Carina Liu's Profile</p>
         </div>
         <div class="navbar">
-            <a href="/iit/index.php">Home</a>
-            <a href="projects.php">Projects/Labs</a>
+            <a href="/iit/quiz3/index.php">Home</a>
+            <a href="/iit/quiz3/projects.php">Projects/Labs</a>
         </div>
