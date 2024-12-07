@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
 <div class="row">
     <div class="picture-layout">
-        <img id="circle-img" src="resources/profile img.jpg" alt="Profile Photo">
+        <img id="circle-img" src="resources/profile_img.jpg" alt="Profile Photo">
     </div>
 
     <div class="main">
