@@ -3,8 +3,8 @@
 session_start();
 
 // Include database connection and header
-include('conn.php');
-include('header.php');
+include('quiz3/includes/conn.php');
+include('quiz3/includes/header.php');
 
 // Check if user is logged in
 if (isset($_SESSION['username'])) {
@@ -75,5 +75,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 
 <?php
 // Include footer
-include('footer.php');
+include('quiz3/includesfooter.php');
 ?>
