@@ -3,8 +3,8 @@
 session_start();
 
 // Include database connection, header, and footer
-include 'includes/conn.php';
-include 'includes/header.php';
+include 'quiz3/includes/conn.php';
+include 'quiz3/includes/header.php';
 
 // Check if user is logged in
 if (isset($_SESSION['user_name'])) {
@@ -14,15 +14,23 @@ if (isset($_SESSION['user_name'])) {
     // Display admin-specific options if user is an admin
     if ($_SESSION['user_type'] === 'admin') {
         echo "<p>You have admin privileges.</p>";
-        echo "<a href='admin.php' class='btn btn-admin'>Manage Labs/Projects</a>";
+        echo "<a href='quiz3/admin.php' class='btn btn-admin'>Manage Labs/Projects</a>";
     }
 
-    echo "<a href='logout.php' class='btn btn-logout'>Logout</a>";
+    echo "<a href='quiz3/logout.php' class='btn btn-logout'>Logout</a>";
     echo "</div>";
 } else {
-    // If not logged in, redirect to the login page
-    header("Location: login.php");
-    exit();
+    // If not logged in, show the login form
+    echo "<div class='login-form'>";
+    echo "<h3>Login</h3>";
+    echo "<form action='quiz3/login.php' method='post'>";
+    echo "<label for='username'>Username:</label>";
+    echo "<input type='text' name='username' id='username' required>";
+    echo "<label for='password'>Password:</label>";
+    echo "<input type='password' name='password' id='password' required>";
+    echo "<button type='submit' name='login'>Login</button>";
+    echo "</form>";
+    echo "</div>";
 }
 ?>
 
