@@ -3,13 +3,13 @@
 session_start();
 
 // Include database connection, header, and footer
-include 'quiz3/includes/conn.php';
-include 'quiz3/includes/header.php';
+include 'includes/conn.php';
+include 'includes/header.php';
 
 // Check if user is logged in
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['user_name'])) {
     echo "<div class='welcome-message'>";
-    echo "<h3>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h3>";
+    echo "<h3>Welcome, " . htmlspecialchars($_SESSION['user_name']) . "!</h3>";
     
     // Display admin-specific options if user is an admin
     if ($_SESSION['user_type'] === 'admin') {
